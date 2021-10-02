@@ -6,6 +6,7 @@ import axios from 'axios'
 import VueCookies from 'vue-cookies'
 import Carousel from 'vue-carousel';
 import VueFullPage from 'vue-fullpage.js'
+import './registerServiceWorker'
 
 Vue.use(Carousel)
 Vue.use(VueFullPage)

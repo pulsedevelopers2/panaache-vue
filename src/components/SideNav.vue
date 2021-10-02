@@ -29,7 +29,7 @@
               <a class="dropdown-item" href="/items?&item=necklace"><span class="maroon-text">N</span> e c k l  a c e</a><br>
               <a class="dropdown-item" href="/items?&item=tanmaiya"><span class="maroon-text">T</span> a n m a i y a</a><br>
               <a class="dropdown-item" href="/items?&item=pendents"><span class="maroon-text">P</span> e n d e n t s</a><br>
-              <a class="dropdown-item" href="/items?&item=braclets"><span class="maroon-text">B</span> r a c l e t s</a><br>
+              <a class="dropdown-item" href="/items?&item=bracelets"><span class="maroon-text">B</span> r a c l e t s</a><br>
               <a class="dropdown-item" href="/items?&item=solitaire"><span class="maroon-text">S</span> o l i t a i r e</a><br>
             </div>
           </div>
