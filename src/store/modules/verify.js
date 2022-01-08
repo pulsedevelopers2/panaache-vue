@@ -16,7 +16,7 @@ const actions = {
             cacheToken: $cookies.get('cacheToken')
         }));
         let payment_details = btoa(JSON.stringify(details))
-        await axios.post('http://localhost:8080/verifypayment',{
+        await axios.post('https://k17hmntqvd.execute-api.ap-south-1.amazonaws.com/api/verifypayment',{
             headers: {
                 'Access-Control-Allow-Origin':'*',
                 'token': tokenBody,

@@ -22,7 +22,7 @@ const actions = {
         try {
             let stringBody = JSON.stringify(body);
             let encryptedBody = btoa(stringBody);
-            await axios.post("http://localhost:8080/login", null,  {
+            await axios.post("https://k17hmntqvd.execute-api.ap-south-1.amazonaws.com/api/login", null,  {
                 headers : {
                     'Access-Control-Allow-Origin':'*',
                     'login': encryptedBody
@@ -57,7 +57,7 @@ const actions = {
                     token: null,
                     cacheToken: cacheToken
                 }));
-                await axios.post("http://localhost:8080/cachelogin", null,  {
+                await axios.post("https://k17hmntqvd.execute-api.ap-south-1.amazonaws.com/api/cachelogin", null,  {
                 headers : {
                     'Access-Control-Allow-Origin':'*',
                     'cache': encryptedToken
@@ -95,7 +95,7 @@ const actions = {
         try {
             let stringBody = JSON.stringify(body);
             let encryptedBody = btoa(stringBody);
-            await axios.post("http://localhost:8080/signup", null,  {
+            await axios.post("https://k17hmntqvd.execute-api.ap-south-1.amazonaws.com/api/signup", null,  {
                 headers : {
                     'Access-Control-Allow-Origin':'*',
                     'signup': encryptedBody
@@ -119,7 +119,7 @@ const actions = {
         try {
             let stringBody = JSON.stringify(body);
             let encryptedBody = btoa(stringBody);
-            await axios.post("http://localhost:8080/verifyOtp", null,  {
+            await axios.post("https://k17hmntqvd.execute-api.ap-south-1.amazonaws.com/api/verifyOtp", null,  {
                 headers : {
                     'Access-Control-Allow-Origin':'*',
                     'verifyOtp': encryptedBody
@@ -148,7 +148,7 @@ const actions = {
         try {
             let stringBody = JSON.stringify(body);
             let encryptedBody = btoa(stringBody);
-            await axios.post("http://localhost:8080/resend", null,  {
+            await axios.post("https://k17hmntqvd.execute-api.ap-south-1.amazonaws.com/api/resend", null,  {
                 headers : {
                     'Access-Control-Allow-Origin':'*',
                     'resendOtp': encryptedBody

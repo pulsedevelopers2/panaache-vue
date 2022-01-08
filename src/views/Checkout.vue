@@ -52,7 +52,7 @@ export default {
                 cacheToken: $cookies.get('cacheToken')
             }));
             let encrep = btoa(JSON.stringify(resp))
-            let result = await this.axios.post('http://localhost:8080/verifyorder',null,{
+            let result = await this.axios.post('https://k17hmntqvd.execute-api.ap-south-1.amazonaws.com/api/verifyorder',null,{
                 headers: {
                     verify: encrep,
                     token: tokenBody

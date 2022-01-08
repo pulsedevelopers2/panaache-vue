@@ -16,25 +16,25 @@
       data-index="0"
       data-name="MySlideName"
     >
-      <img class="slide-image" src="../assets/SAMPLE- 3.png"><br>
+      <img class="slide-image" src="../assets/test1.png"><br>
     </slide>
     <slide
       data-index="1"
       data-name="MySlideName2"
     >
-      <img class="slide-image" src="../assets/SAMPLE-1.jpg"><br>
+      <img class="slide-image" src="../assets/test2.jpg"><br>
     </slide>
     <slide
       data-index="2"
       data-name="MySlideName3"
     >
-      <img class="slide-image" src="../assets/SAMPLE-4.png"><br>
+      <img class="slide-image" src="../assets/test3.jpg"><br>
     </slide>
     <slide
       data-index="3"
       data-name="MySlideName4"
     >
-      <img class="slide-image" src="../assets/SAMPLE-2.jpg"><br>
+      <img class="slide-image" src="../assets/test4.png"><br>
     </slide>
     <slide
       data-index="4"

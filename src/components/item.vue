@@ -3,7 +3,7 @@
     <div class="row single_item col-xs-12">
       <!-- Images Display -->
       <div class="col-xs-12 main-image">
-        <div class="image-wrapper"><img v-if="pos==0" src="../assets/test_image.png"><img v-else src="../assets/test-image2.png"></div><br>
+        <div class="image-wrapper"><img v-if="pos==0" src="../assets/test1.png"><img v-else src="../assets/test4.png"></div><br>
         <h4 class="main-title">
           {{ item.title }}<br>
           {{ item.description }}

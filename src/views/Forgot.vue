@@ -48,7 +48,7 @@ export default {
     methods: {
         async verifyEmail(){
             if (this.email && this.email!= '') {
-                await this.axios.post("http://localhost:8080/forgotpassword", null,  {
+                await this.axios.post("https://k17hmntqvd.execute-api.ap-south-1.amazonaws.com/api/forgotpassword", null,  {
                     headers: {
                         'Access-Control-Allow-Origin':'*',
                         'email': this.email
@@ -78,7 +78,7 @@ export default {
                 }
                 let stringBody = JSON.stringify(body);
                 let encryptedBody = btoa(stringBody);
-                await this.axios.post("http://localhost:8080/resetpassword",null, {
+                await this.axios.post("https://k17hmntqvd.execute-api.ap-south-1.amazonaws.com/api/resetpassword",null, {
                     headers: {
                         'Access-Control-Allow-Origin':'*',
                         'body': encryptedBody

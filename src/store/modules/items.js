@@ -21,7 +21,7 @@ const actions = {
           token: token,
           cacheToken: $cookies.get('cacheToken')
       })
-        await axios.post(`http://localhost:8080/getItems/${item}`, null,  {
+        await axios.post(`https://k17hmntqvd.execute-api.ap-south-1.amazonaws.com/api/getItems/${item}`, null,  {
                 headers : {
                     'Access-Control-Allow-Origin':'*',
                     'token': tokenBody

@@ -21,7 +21,7 @@ const actions = {
             token: token,
             cacheToken: $cookies.get('cacheToken')
         }));
-        axios.post('http://localhost:8080/viewcart',null,{
+        axios.post('https://k17hmntqvd.execute-api.ap-south-1.amazonaws.com/api/viewcart',null,{
             headers : {
                 'Access-Control-Allow-Origin':'*',
                 'token': tokenBody
@@ -46,7 +46,7 @@ const actions = {
             token: token,
             cacheToken: $cookies.get('cacheToken')
         }));
-        axios.post(`http://localhost:8080/remove`,{ cart_id: id },{
+        axios.post(`https://k17hmntqvd.execute-api.ap-south-1.amazonaws.com/api/remove`,{ cart_id: id },{
             headers : {
                 'Access-Control-Allow-Origin':'*',
                 'token': tokenBody
@@ -76,7 +76,7 @@ const actions = {
             address: address
         });
         let encryptedBody = btoa(stringBody);
-        await axios.post("http://localhost:8080/placeorder", { checkout : encryptedBody }, {
+        await axios.post("https://k17hmntqvd.execute-api.ap-south-1.amazonaws.com/api/placeorder", { checkout : encryptedBody }, {
             headers: {
                 'Access-Control-Allow-Origin':'*',
                 'token': tokenBody

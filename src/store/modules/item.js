@@ -25,7 +25,7 @@ const actions = {
             token: token,
             cacheToken: $cookies.get('cacheToken')
         }));
-        await axios.post(`http://localhost:8080/getItem/${id}`, null,  {
+        await axios.post(`https://k17hmntqvd.execute-api.ap-south-1.amazonaws.com/api/getItem/${id}`, null,  {
                 headers : {
                     'Access-Control-Allow-Origin':'*',
                     'token': tokenBody
@@ -51,7 +51,7 @@ const actions = {
         cacheToken: $cookies.get('cacheToken')
       }));
       let ecBody = btoa(JSON.stringify(body))
-      await axios.post(`http://localhost:8080/addtocart`, { cart: ecBody},  {
+      await axios.post(`https://k17hmntqvd.execute-api.ap-south-1.amazonaws.com/api/addtocart`, { cart: ecBody},  {
                 headers : {
                     'Access-Control-Allow-Origin':'*',
                     'token': tokenBody
@@ -78,7 +78,7 @@ const actions = {
         cacheToken: $cookies.get('cacheToken')
       }))
       try {
-        await axios.post(`http://localhost:8080/pricing`, body,  {
+        await axios.post(`https://k17hmntqvd.execute-api.ap-south-1.amazonaws.com/api/pricing`, body,  {
                 headers : {
                     'Access-Control-Allow-Origin':'*',
                     'token': tokenBody

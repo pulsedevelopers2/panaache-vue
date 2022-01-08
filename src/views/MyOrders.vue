@@ -65,7 +65,7 @@ export default {
                 cacheToken: $cookies.get('cacheToken')
             }));
             
-            await new Promise(resolve => { this.axios.post("http://localhost:8080/getorders",null,{
+            await new Promise(resolve => { this.axios.post("https://k17hmntqvd.execute-api.ap-south-1.amazonaws.com/api/getorders",null,{
                 headers: {
                     token: tokenBody
                 }
@@ -73,7 +73,7 @@ export default {
                 let items_d = response.data;
                 await Promise.all(items_d.map(async item => {
                     await Promise.all(item.order_details.cart.map(async id => {
-                        return this.axios.post("http://localhost:8080/getitemdetails/"+id.item_id).then((response) => {
+                        return this.axios.post("https://k17hmntqvd.execute-api.ap-south-1.amazonaws.com/api/getitemdetails/"+id.item_id).then((response) => {
                             let data = response.data;
                             id.image_link = JSON.parse(data.image_link)
                             id.title = data.title
